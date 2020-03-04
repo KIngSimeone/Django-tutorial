@@ -4,4 +4,8 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse('We are at Index function')
+    return render(request, 'utilities/index.html')
+
+
+def processed(request):
+    return HttpResponse('We are at Processed view')
